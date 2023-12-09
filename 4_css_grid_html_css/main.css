@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-size: 30px;
 }
-[class ^= "box-"]{
+/* [class ^= "box-"]{
     display: grid;
     place-items: center;
     border: solid 5px orangered;
@@ -12,12 +12,12 @@
     border-radius: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0 ,.1);
     color: #fff;
-}
+} */
 body{
     background: linear-gradient(lightblue, darkblue);
     height: 100vh;
 }
-.beginner{
+/* .beginner{
     height: 90vh;
     width: 90%;
     margin: 20px auto; 
@@ -25,6 +25,57 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     gap: 20px;
-
 }
 
+.beginner_two {
+    height: 90vh;
+    width: 90%;
+    margin: 20px auto;
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.beginner_two .box-1{
+    grid-column: 1 / 4; 
+    grid-column: span 2;
+}
+
+.beginner_two .box-2 {
+    grid-column: 4 / 10; 
+    grid-column: span 8;
+}
+
+.beginner_two .box-3 {
+    grid-column: 10 / 13; 
+    grid-column: span 2;
+}  */
+.pro{
+        height: 90vh;
+            width: 90%;
+            margin: 10px auto;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr );
+    
+}
+.box-1, .box-2, .box-3, .box-4, .box-5{
+    border: 5px solid orangered;
+    display: grid;
+    place-items: center;
+}
+.box-1{
+    grid-area: h;
+}
+.box-2 {
+    grid-area: b;
+}
+.box-3 {
+    grid-area: m;
+}
+.box-4{
+    grid-area: s;
+}
+.box-5 {
+    grid-area: f;
+}
