@@ -142,6 +142,9 @@ body{
     }
 } */
 @media (min-width: 0px) and (max-width: 600px) {
+    /* we put max and also min screen for media quary 
+    also strart fromm low word to upword numbers
+    */
     .pro {
         height: 90vh;
         width: 90%;
@@ -192,6 +195,7 @@ body{
     }
 } 
 @media (min-width: 601px) and (max-width: 1080px) {
+    /* we put max and also min screen for media quary */
      .pro {
          height: 90vh;
          width: 90%;
