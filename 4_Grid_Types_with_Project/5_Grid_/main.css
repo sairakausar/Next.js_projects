@@ -1,0 +1,93 @@
+/* * {
+   width: 90%;
+   padding: 0px;
+  
+   margin: 0px;
+  
+   font-size: 30px;
+   display: grid;
+   text-align: center ;
+   box-sizing: border-box;
+   
+}
+body{
+    background: linear-gradient(lightblue,darkblue);
+    height: 100vh;
+    margin: 140px;
+}
+.parent{
+    display: grid;
+    text-align: center;
+    place-items: center;
+    
+}
+.header , .mainContent, .sidebar, .bog, .footer{
+    border: solid 5px brown ;
+    margin: 20px auto;
+    display: grid;
+    text-align: center;
+    border-radius: 20px;
+    height: 20vh;
+    text-align: center ;
+} */
+* {
+    box-sizing: border-box;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    display: grid;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(lightblue, darkblue);
+    height: 100vh;
+    margin: 0;
+}
+
+.masterContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  width: 90%;
+  margin: 5px auto;   
+}
+
+.masterContainer img{
+    width: 180px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.card{
+    background: rgba(255,255,255,.2) ;
+    box-shadow: 0,0, 5px, rgba(0,0,0,.1);
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+.card .Simposon_info{
+    background: darkblue;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    
+}
+
+/* .header,
+.mainContent,
+.sidebar,
+.bog,
+.footer {
+    border: solid 5px brown;
+    margin: 20px;
+    display: grid;
+    text-align: center auto;
+    border-radius: 20px;
+    height: 20vh;
+} */
+
+
+
