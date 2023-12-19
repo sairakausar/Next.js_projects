@@ -1,11 +1,13 @@
 import React from 'react'
 
-export default function Button() {
+
+export default function MeButton(props:any) {
   return (
-      <div>
-          <button>
-              This is the button which use for counter
-          </button>
+    <div>
+      <button className={props.MyButtonStyle} onClick={props.MyLittleButton}>
+        button which use for counter
+        {props.titleButton}
+      </button>
     </div>
-  )
+  );
 }
