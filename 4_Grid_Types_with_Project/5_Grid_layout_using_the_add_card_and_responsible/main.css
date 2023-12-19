@@ -30,15 +30,16 @@ body{
     height: 20vh;
     text-align: center ;
 } */
-* {
+/* * {
     box-sizing: border-box;
     width: 90%;
     padding: 0;
     margin: 0;
     font-size: 30px;
-    display: grid;
-    text-align: center;
-}
+   
+    /* display: grid;
+    text-align: center; */
+/* } */ 
 
 body {
     background: linear-gradient(lightblue, darkblue);
