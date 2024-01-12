@@ -131,9 +131,9 @@ export default function CounterForms() {
         This is use for the name change with the use state or power ful hook or
         power hook and First made button
         <MeButton
-          MyButtonStyle={"bg-lime-500 m-10 p-6"}
-          titleButton=" Previous"
-          MyLittleButton={PreviousIndex}
+          MyButtonStyle={"bg-lime-500 m-10 p-6"}                   
+          titleButton=" Previous"                        
+          MyLittleButton={PreviousIndex}                                     
         />
         <h1 className="mx-40 p-3">{students[index].name}</h1>
         <h3 className="m-5 p-0">
