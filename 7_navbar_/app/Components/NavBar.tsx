@@ -1,9 +1,13 @@
+'use client'
 import React from 'react'
 import { TfiMenu, TfiClose } from "react-icons/tfi";
+import { useState } from 'react';
 
 
 
 const NavBar = () => {
+  const [nav, setNav] = useState(false)
+  const handlClick = () => setNav(!nav)
   return (
     <div className="w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg">
       <div className="px-2 flex justify-between items-center w-full h-full">
@@ -23,20 +27,21 @@ const NavBar = () => {
           </button>
           <button className="px-8 py-8 ">Sign Up</button>
         </div>
-        <div className="md:hidden">
-          <TfiMenu className="w-5" />
+        <div className="md:hidden" onClick={handlClick}>
+          {!nav ? <TfiMenu className="w-5" /> : <TfiClose className="w-5" />}
         </div>
       </div>
 
-      <TfiClose />
-      <ul className="absolute bg-zinc-200 w-full px-8">
+      <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"}>
         <li className="border-b-2 border-zinc-300 w-full">Home</li>
         <li className="border-b-2 border-zinc-300 w-full">About</li>
         <li className="border-b-2 border-zinc-300 w-full">Support</li>
         <li className="border-b-2 border-zinc-300 w-full">platforms</li>
         <li className="border-b-2 border-zinc-300 w-full">Pricing</li>
         <div className="flex flex-col my-4">
-          <button className="bg-transparent text-indigo-600 px-8 py-3 mb-4">Sign In</button>
+          <button className="bg-transparent text-indigo-600 px-8 py-3 mb-4">
+            Sign In
+          </button>
 
           <button className="px-8 py-3 ">Sign Up</button>
         </div>
