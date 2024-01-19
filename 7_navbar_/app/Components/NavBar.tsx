@@ -32,7 +32,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"}>
+      <ul className={!nav ? "hidden" :" absolute bg-zinc-200 h-screen px-8"}>
         <li className="border-b-2 border-zinc-300 w-full">Home</li>
         <li className="border-b-2 border-zinc-300 w-full">About</li>
         <li className="border-b-2 border-zinc-300 w-full">Support</li>
@@ -46,6 +46,7 @@ const NavBar = () => {
           <button className="px-8 py-3 ">Sign Up</button>
         </div>
       </ul>
+      
     </div>
   );
 }
