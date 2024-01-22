@@ -26,16 +26,18 @@ const Hero = () => {
           <Image className="w-full" src={bgImg} alt="image" />
           {/* // this is extention // for boxes // pesticide for Chrome// */}
         </div>
-        <div>
-          <p>
-            <div>Data Service</div>
-            <div>
-              <p>Icon. App Security </p>
-              <p>Icon. Dashboard Design </p>
-              <p>Icon. Cloud Data </p>
-              <p>Icon. API </p>
-            </div>
-          </p>
+        <div className="absolute flex flex-col py-8 md:min-w-[760px] bottom-[-5%]
+         mx-1 md:left-1/2 transform md:-translate-x-1/2 bg-zinc-200 borderborder-slate-300
+         rounded-xl text-center shadow-xl">
+         
+            <p>Data Service</p>
+          
+          <div>
+            <p>Icon. App Security </p>
+            <p>Icon. Dashboard Design </p>
+            <p>Icon. Cloud Data </p>
+            <p>Icon. API </p>
+          </div>
         </div>
       </div>
     </div>
