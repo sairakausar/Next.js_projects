@@ -33,7 +33,7 @@ const Hero = () => {
             <p>Data Service</p>
           
           <div>
-            <p>Icon. App Security </p>
+            <p><CloudUpLoadIcon /> App Security </p>
             <p>Icon. Dashboard Design </p>
             <p>Icon. Cloud Data </p>
             <p>Icon. API </p>
