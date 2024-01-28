@@ -1,10 +1,10 @@
 import Image from "next/image";
-import FramerMotion from "./component/FramerMotion";
+import FramerMotion1 from "./component/FramerMotion1";
 
 export default function Home() {
   return (
     <main >
-<FramerMotion />
+<FramerMotion1 />
 
     </main>
   );
